@@ -7,7 +7,62 @@
     <link rel="stylesheet" href="src/portfolio.css">
 </head>
 <body>
-    <div id="header"></div>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#home"><strong>Home</strong></a></li>
+                    <li><a href="#about"><strong>About</strong></a></li>
+                    <li><a href="#services"><strong>Services</strong></a></li>
+                    <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <p>Data engineer | Full Stack Developer</p>
+                <h1 class="introduction">Hello, I'm <span class="name">Betinah Onyango</span> From Nairobi, Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="aboutme.png" alt="Betinah Onyango" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>I'm a passionate software developer with a focus on building scalable web applications. I love working with modern technologies and continuously improving my skills.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="mini-subs">Data Engineering</span><br><span>Building data pipelines and ETL processes</span></li>
+                        <li><span class="mini-subs">Full Stack Development</span><br><span>Developing responsive web applications</span></li>
+                        <li><span class="mini-subs">Data Analysis</span><br><span>Analyzing data to drive business insights</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="mini-subs">June 2025 - Present</span><br><span>Data analytics and engineering Intern at Infotrace Analytics</span></li>
+                        <li><span class="mini-subs">February 2023 - August 2023</span><br><span>Finance and Analytics Intern at Molars Dental Practice Limited</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="mini-subs">August 2023 - Ongoing</span><br><span>Degree in Data Science and Analytics at Jomo Kenyatta University of Agriculture and Technology<br>Expected graduation 2027</span></li>
+                        <li><span class="mini-subs">January 2025</span><br><span>Web Development Bootcamp at SheCodes Foundation</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    <script src="src/portfolio.js"></script>
 </body>
 </html>
